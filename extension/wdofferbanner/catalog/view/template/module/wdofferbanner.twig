@@ -1,0 +1,22 @@
+<div class="offer-banner">
+  <div class="container">
+    <div class="row offer_bnr">
+    {% for banner in banners %}
+    <div class="col-md-6 col-xs-12 offer-dec">
+      <div class="offerdesc">
+        {{ banner.description }} 
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <div class="beffect">
+        {% if banner.link %}
+          <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/></a>
+        {% else %}
+          <img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/>
+        {% endif %} 
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="right-bnr">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-xs-12 rightbnr">
+  {% for banner in banners %}
+    <div class="beffect">
+      {% if banner.link %}
+        <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/></a>
+      {% else %}
+        <img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/>
+      {% endif %}
+      <div class="banner-description right_b">
+          {{ banner.description }}       
+      </div>
+    </div>
+  {% endfor %}
+</div>

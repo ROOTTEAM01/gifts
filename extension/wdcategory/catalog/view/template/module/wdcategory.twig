@@ -1,0 +1,33 @@
+<div class="category-bg">
+	<div class="container top-category">
+		<div class="row">
+				<div class="category_secheading">
+					<h3>Gifts for <b>all occasions</b></h3>
+					<a class="btn btn-primary btn-section" href="#" tabindex="0"><span>check more product</span></a>
+				</div>
+<div class="col-xs-12">
+<div class="wdcategory">
+{% for item in items %}
+	<div class="wd-item-layout">
+		<div class="wd-item-img">
+			<a href="{{ item.href }}">
+				<img src="{{ item.thumb }}" alt="{{ item.title }}" title="{{ item.title }}" class="img-fluid img-responsive"/>
+			</a>
+		</div>
+		<h4 class="wd-item-title">
+			<div class="catbr">
+				<a href="{{ item.href }}">{{ item.title }}</a>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+			</div>
+		<div class="wd-item-caption">
+			<a href="{{ item.href }}" class="btn btn-primary">show more</a>
+			{# <h6 class="catepro">{{item.totalp}} {{catepro}}</h6> #}
+		</div>
+		</h4>
+	</div>
+{% endfor %}
+</div>
+</div>
+</div>
+</div>
+</div>

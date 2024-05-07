@@ -1,0 +1,25 @@
+<div class="left-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+      {% for banner in banners %}
+        <div class="beffect">
+          {% if banner.link %}
+            <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/></a>
+          {% else %}
+            <img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/>
+          {% endif %}
+          <div class="left-dec">
+            {{ banner.description }}
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+    <div class="col-md-8 col-xs-12 lbr-ctn">
+      <h4>categories</h4>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took</p>
+      <a class="btn btn-primary btn-section" href="#" tabindex="0">shop now</a>
+    </div>
+</div>
+</div>
+</div>

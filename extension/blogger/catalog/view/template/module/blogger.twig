@@ -1,0 +1,71 @@
+<div class="blog-bg">
+<div class="container">
+    <div class="secheading">
+        <div class="blog-ctn">
+            <h3>Gifts</h3>
+            <h1 class="heading text-left"><span>blgos</span></h1>
+        </div>
+        <a class="btn btn-primary btn-section" href="#" tabindex="0">show more products</a>
+    </div>
+    <div class="row">
+    <div class="col-xs-12 box-content">
+        <div class="box-product">
+            <div class="wbblog">
+            {% for blog in blogs %}
+                <div class="product-block cless">
+                     <div class="blogshadow blog-thumbnail">
+                    {% if blog.image %}
+                        <div class="blog-left">
+                            <div class="workdo-blog-image">
+                                <img src="{{ blog.image }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-fluid" />
+                                <div class="blog-post-image-hover"> </div>
+                                {# <div class="workdo_post_hover">
+                                    <div class="blog-ic">
+                                    <a class="icon zoom" title="Click to view Full Image " href="{{ blog.image }}" data-lightbox="example-set"><i class="fa fa-search"></i></a>
+                                    <a class="icon readmore_link" title="Click to view Read More " href="{{ blog.href }}"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div> #}
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="blog-right">
+                        <p class="name">@johndoe</p>
+                        <h4><a href="{{ blog.href }}">{{ blog.title }}</a> </h4>
+                        <div class="workdo-post-author">
+                            {# <span class="write-comment"> <a href="{{ blog.href }}">{{ blog.total_comments }} {{ entry_comment }}</a> </span> #}
+                        </div>
+                        <div class="blog-desc">{{ blog.description }}</div>
+                        <div class="date-time blogdt">
+                            <span class="date-time">{{ blog.date_added }}</span>
+                        </div> 
+                        <div class="blog-date blog-bottom">
+                            <div class="read_link"> 
+                           <a class="btn btn-primary read_more" href="{{ blog.href }}">{{ text_read_more }}</a>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                          {#  <div class="view-blog">
+                                <div class="read-more">
+                                    <a href="{{ blog.href }}">
+                                        <i class="fa fa-link"></i>{{ text_read_more }}
+                                    </a>
+                                </div>
+                            </div> #} 
+                    </div>
+                    {# <div class="buttons-see-all text-center">
+                        <button type="button" onclick="location='{{ all_blogs }}';" class="btn btn-primary">{{ button_all_blogs }}</button>
+                    </div> #}
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+</div>
+       
+</div>
+</div>
+</div>

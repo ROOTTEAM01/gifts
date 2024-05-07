@@ -1,0 +1,169 @@
+<form method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#header-cart">
+  <div class="product-thumb">
+    <div class="product-bg">
+      <div class="caption">
+        <div class="button-group">
+          <button class="wish" type="submit" formaction="{{ add_to_wishlist }}" data-bs-toggle="tooltip" title="{{ button_wishlist }}"><span>add to wishlist</span>
+          <img src="image/catalog/wishlist.svg" alt=""></button>
+          <button class="compare" type="submit" formaction="{{ add_to_compare }}" data-bs-toggle="tooltip" title="{{ button_compare }}">
+            <img src="image/catalog/compare.svg" alt="compare">
+          </button>
+        </div>
+        <div class="product-caption">
+          <div class="bran">
+            <span><a href="{{ manufacturer_id }}" class="textdeb">{{ manufacturer }}</a></span>
+          </div>
+          <h4 class="protitle"><a href="{{ href }}">{{ name }}</a></h4>
+        </div>
+        <!-- {% if review_status %}
+        <div class="rating">
+          {% for i in 1..5 %}
+              {% if rating < i %}
+              <span class="fa-stack"><i class="fa-regular fa-star fa-stack-1x"></i></span>
+            {% else %}
+              <span class="fa-stack"><i class="fa-solid fa-star fa-stack-1x"></i><i class="fa-regular fa-star fa-stack-1x"></i></span>
+            {% endif %}
+            {% endfor %}               
+            <span class="rate-tot">({{ tab_review }})</span>
+        </div>
+      {% endif %}  -->
+          <!-- discount % start -->
+          <!-- {% if price %}
+              {% if special %}
+              <span class="discount-onprice">{{ discount }}%</span>            
+            {% endif %}
+          {% endif %} -->
+          <!-- discount % end -->
+          
+          <p class="catlist-des">{{ description }}</p>
+          {# Start Warkdo Option #}
+          <div class="web_option">
+            {% if options %}
+              {% for option in options %}
+                {% if option.type == 'select' %}
+                <div class="form-group">
+                    <div class="{% if option.required %} required{% endif %} select">
+                    <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label><select name="option[{{ option.product_option_id }}]" id="input-option-{{ option.product_option_id }}" class="form-select">
+                      <option value="">{{ text_select }}</option>
+                      {% for option_value in option.product_option_value %}
+                        <option value="{{ option_value.product_option_value_id }}">{{ option_value.name }}
+                         {% if option_value.price %}
+                            ({{ option_value.price_prefix }}{{ option_value.price }})
+                          {% endif %}
+                        </option> 
+                      {% endfor %}
+                    </select>
+                    <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                  </div>
+                </div>
+                {% endif %}
+                {% if option.type == 'radio' %}
+                  <div class="mb-3{% if option.required %} required{% endif %}">
+                    <label class="form-label">{{ option.name }}</label>
+                    <div id="input-option-{{ option.product_option_id }}" class="custom-radio">
+                      {% for option_value in option.product_option_value %}
+                        <div class="form-check">
+                          <label class="color-option">
+                            <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/> 
+                            <span>{% if option_value.image %}</span><img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %}
+                            {{ option_value.name }}
+                            {#{% if option_value.price %}
+                              ({{ option_value.price_prefix }}{{ option_value.price }})
+                            {% endif %} #}
+                          </label>
+                        </div>
+                      {% endfor %}
+                    </div>
+                    <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                  </div>
+                {% endif %}
+                {% if option.type == 'checkbox' %}
+                  <div class="mb-3{% if option.required %} required{% endif %}">
+                    <label class="form-label">{{ option.name }}</label>
+                    <div id="input-option-{{ option.product_option_id }}">
+                      {% for option_value in option.product_option_value %}
+                        <div class="form-check">
+                          <input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/> <label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label">
+                            {% if option_value.image %}
+                              <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %}
+                            {{ option_value.name }}
+                            {% if option_value.price %}
+                              ({{ option_value.price_prefix }}{{ option_value.price }})
+                            {% endif %}</label>
+                        </div>
+                      {% endfor %}
+                    </div>
+                    <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                  </div>
+                {% endif %}
+                {% if option.type == 'text' %}
+                  <div class="mb-3{% if option.required %} required{% endif %}">
+                    <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label> <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
+                    <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
+          {# End Workdo Option #}
+          <div class="pro-price">
+            {% if price %}
+            <div class="price">
+              {% if not special %}
+                <span class="price-new">{{ price }}</span>
+              {% else %}
+                <span class="price-new">{{ special }}</span>
+                <div class="wbfullprice">
+                  <span class="price-old">{{ price }}</span>
+                </div>
+              {% endif %}
+              {# {% if tax %}
+                <span class="price-tax">{{ text_tax }} {{ tax }}</span>
+              {% endif %} #}
+            </div>
+            {% endif %}
+          </div>
+        <div class="homeadd d-flex justify-content-left">
+         
+          <!-- <div class="wrap input-group">
+            <button type="button" id="sub" class="sub btn">-</button>
+            <input name="quantity" class="count form-control" type="text" id="1" value="1" min="1" />
+            <button type="button" id="add" class="add btn">+</button>
+          </div> -->
+          <button type="submit" formaction="{{ add_to_cart }}" data-bs-toggle="tooltip" class="cartb"><span>{{ button_cart }}</span><img alt="stor-bg" src="image/catalog/stor-bg.svg">
+          </button>
+        </div>
+      </div>
+      <div class="image">
+        <!-- Save Price start -->
+        <!-- {% if price %}
+           {% if special %}            
+             <span class="you-save">{{ save }}</span> 
+          {% endif %}
+        {% endif %} -->
+        <!-- Save Price end --> 
+         <!-- discount % start -->
+        <!-- {% if price %}
+           {% if special %}
+            <span class="discount-onprice">{{ discount }}%</span>            
+          {% endif %}
+        {% endif %} -->
+        <!-- discount % end -->
+      <a href="{{ href }}">
+        {# <img src="{{ thumb }}" alt="{{ name }}" title="{{ name }}" class="img-fluid"/> #}
+        {% if images %}
+          {# Workdo Custom Code 15-12-2022#}
+          {% for image in images %}
+            <div class="second-image">
+              <img src="{{ image.additional }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-fluid"/>
+              {# <img src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail"/> #}
+            </div>
+          {% endfor %}
+        {% endif %}
+      </a>
+      </div>
+    <input type="hidden" name="product_id" value="{{ product_id }}"/>
+    {# <input type="hidden" name="quantity" value="{{ minimum }}"/> #}
+  </div>
+  </div>
+</form>

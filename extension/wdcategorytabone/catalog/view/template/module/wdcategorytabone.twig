@@ -1,0 +1,35 @@
+<div class="category-tabone">
+<div class="container">
+  <div class="row">
+    <div class="secheading">
+      <h1 class="heading text-left"><span>BESTSELLER</h1>
+    <ul class="nav nav-tabs cat-tab text-right">
+      {% set i = 0 %}
+      {% for category in categories %}
+        <li><a href="#tabone-{{loop.index}}" data-bs-toggle="tab" {% if loop.index0 == 0 %}class="active"{% endif %}>{{ category.category }}</a></li>
+        {% set i = i + 1 %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+</div>
+<div class="container wp_ctgs">
+<div class="tab-content" role="tablist">
+{% for category in categories %}
+<div class="tab-pane fade  {% if loop.index0 == 0 %} show active {% endif %}" id="tabone-{{loop.index}}">
+<div class="row">
+  <div class="col-xs-12">
+  <div class="cattabone">
+  {% for product in category.products %}
+    <div class="col cless">{{ product }}</div>
+  {% endfor %}
+</div>
+  </div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</div>
+
+

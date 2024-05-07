@@ -1,0 +1,22 @@
+<div class="specialbanner">
+<div class="container">
+<div class="row">
+    {% for banner in banners %}
+    <div class="col-md-7 col-xs-12">
+      <div class="spe-text">
+        {{ banner.description }}  
+      </div>
+    </div>
+    <div class="col-md-5 col-xs-12 bnr-bg">
+      <div class="beffect">
+        {% if banner.link %}
+          <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/></a>
+        {% else %}
+          <img src="{{ banner.image }}" alt="{{ banner.title }}" class="mx-auto img-fluid"/>
+        {% endif %}
+      </div>
+    </div>  
+    {% endfor %}
+</div>
+</div>
+</div>
