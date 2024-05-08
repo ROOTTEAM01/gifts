@@ -168,7 +168,7 @@ class __TwigTemplate_e789599dcfc92a6e29b58b60261552755985e5f34c952f09aacff0c255b
               <div id=\"error-lastname\" class=\"invalid-feedback\"></div>
             </div>
           </div>
-          <div class=\"row mb-3 required\">
+          <div class=\"row mb-3\">
             <label for=\"input-email\" class=\"col-sm-2 col-form-label\">";
         // line 58
         echo ($context["entry_email"] ?? null);
@@ -182,8 +182,8 @@ class __TwigTemplate_e789599dcfc92a6e29b58b60261552755985e5f34c952f09aacff0c255b
             </div>
           </div>
 
-            <div class=\"row mb-3 required\">
-              <label for=\"input-telephone\" class=\"col-sm-2 col-form-label\">";
+          <div class=\"row mb-3 required\">
+            <label for=\"input-telephone\" class=\"col-sm-2 col-form-label\">";
         // line 66
         echo ($context["entry_telephone"] ?? null);
         echo "</label>
@@ -194,7 +194,7 @@ class __TwigTemplate_e789599dcfc92a6e29b58b60261552755985e5f34c952f09aacff0c255b
         echo "\" id=\"input-telephone\" class=\"form-control\"/>
                 <div id=\"error-telephone\" class=\"invalid-feedback\"></div>
               </div>
-            </div>
+          </div>
 
           ";
         // line 73

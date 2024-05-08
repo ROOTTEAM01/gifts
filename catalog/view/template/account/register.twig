@@ -54,7 +54,7 @@
               <div id="error-lastname" class="invalid-feedback"></div>
             </div>
           </div>
-          <div class="row mb-3 required">
+          <div class="row mb-3">
             <label for="input-email" class="col-sm-2 col-form-label">{{ entry_email }}</label>
             <div class="col-sm-10">
               <input type="email" name="email" value="" placeholder="{{ entry_email }}" id="input-email" class="form-control"/>
@@ -62,13 +62,13 @@
             </div>
           </div>
 
-            <div class="row mb-3 required">
-              <label for="input-telephone" class="col-sm-2 col-form-label">{{ entry_telephone }}</label>
+          <div class="row mb-3 required">
+            <label for="input-telephone" class="col-sm-2 col-form-label">{{ entry_telephone }}</label>
               <div class="col-sm-10">
                 <input type="tel" name="telephone" value="" placeholder="{{ entry_telephone }}" id="input-telephone" class="form-control"/>
                 <div id="error-telephone" class="invalid-feedback"></div>
               </div>
-            </div>
+          </div>
 
           {% for custom_field in custom_fields %}
 

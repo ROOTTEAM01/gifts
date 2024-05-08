@@ -12222,3 +12222,7 @@ Line: 13
 2024-05-07 06:46:43 - PHP Unknown:  Creation of dynamic property Opencart\System\Engine\Proxy::$getSubscriptions is deprecated in C:\xampp\htdocs\gifts-quickstart\system\engine\proxy.php on line 35
 2024-05-07 06:46:43 - PHP Unknown:  Creation of dynamic property Opencart\System\Engine\Proxy::$addReport is deprecated in C:\xampp\htdocs\gifts-quickstart\system\engine\proxy.php on line 35
 2024-05-07 13:02:40 - PHP Warning:  imagecreatefrompng(): gd-png: libpng warning: iCCP: known incorrect sRGB profile in C:\xampp\htdocs\gifts-quickstart\system\library\image.php on line 47
+2024-05-08 12:32:01 - PHP Warning: imagecreatefrompng(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+File: C:\xampp\htdocs\gifts-quickstart\system\library\image.php
+Line: 47
+
