@@ -39,7 +39,7 @@ class __TwigTemplate_4b114a25bcc67a8dd1a66ebd13fd79b4f3292cf2df6534ca1bdb1b6fa93
     <div class=\"secheading\">
         <div class=\"blog-ctn\">
             <h3>Gifts</h3>
-            <h1 class=\"heading text-left\"><span>blgos</span></h1>
+            <h1 class=\"heading text-left\"><span>blogs</span></h1>
         </div>
         <a class=\"btn btn-primary btn-section\" href=\"#\" tabindex=\"0\">show more products</a>
     </div>

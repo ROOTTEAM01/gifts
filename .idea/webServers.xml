@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d0ffdb16-d5c9-4c77-9285-fe5cc9bff023" name="gifts" url="http://sftp://access1004322613.webspace-data.io">
+        <fileTransfer accessType="SFTP" host="access1004322613.webspace-data.io" port="22" sshConfigId="e5ab3a00-3cac-4569-a118-6ad24c93da26" sshConfig="acc346681366@access1004322613.webspace-data.io:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

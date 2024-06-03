@@ -34,7 +34,7 @@
               <h1>{{ text_new_customer }}</h1>
               <p><strong>{{ text_register }}</strong></p>
               <p>{{ text_register_account }}</p>
-              <a href="{{ register }}" class="btn btn-primary">{{ button_continue }}</a></div>
+              <a href="{{ custom }}" class="btn btn-primary">{{ button_continue }}</a></div>
           </div>
         </div>
         <div class="col-sm-6">
@@ -42,7 +42,7 @@
             <div class="card-body">
               <form id="form-login" action="{{ login }}" method="post" data-oc-toggle="ajax">
                 <h1>{{ text_returning_customer }}</h1>
-                <p><strong>{{ text_i_am_returning_customer }}</strong></p>
+                <p><strong><a href="{{ register }}">{{ text_register }}</a></strong></p>
                 <div class="mb-3">
                   <label for="input-email" class="col-form-label">{{ entry_email }}</label>
                   <input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control"/>

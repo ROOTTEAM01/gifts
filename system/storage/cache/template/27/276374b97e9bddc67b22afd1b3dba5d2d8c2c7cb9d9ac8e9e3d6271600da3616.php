@@ -121,7 +121,7 @@ class __TwigTemplate_f59445368b0853f3db4a34dbdc5f8152b3226c52ad48e42faf18a128ada
         echo "</p>
               <a href=\"";
         // line 37
-        echo ($context["register"] ?? null);
+        echo ($context["custom"] ?? null);
         echo "\" class=\"btn btn-primary\">";
         echo ($context["button_continue"] ?? null);
         echo "</a></div>
@@ -138,10 +138,12 @@ class __TwigTemplate_f59445368b0853f3db4a34dbdc5f8152b3226c52ad48e42faf18a128ada
         // line 44
         echo ($context["text_returning_customer"] ?? null);
         echo "</h1>
-                <p><strong>";
+                <p><strong><a href=\"";
         // line 45
-        echo ($context["text_i_am_returning_customer"] ?? null);
-        echo "</strong></p>
+        echo ($context["register"] ?? null);
+        echo "\">";
+        echo ($context["text_register"] ?? null);
+        echo "</a></strong></p>
                 <div class=\"mb-3\">
                   <label for=\"input-email\" class=\"col-form-label\">";
         // line 47
@@ -220,7 +222,7 @@ class __TwigTemplate_f59445368b0853f3db4a34dbdc5f8152b3226c52ad48e42faf18a128ada
 
     public function getDebugInfo()
     {
-        return array (  206 => 68,  200 => 65,  196 => 64,  189 => 59,  183 => 57,  181 => 56,  177 => 55,  170 => 53,  164 => 52,  160 => 51,  152 => 48,  148 => 47,  143 => 45,  139 => 44,  135 => 43,  124 => 37,  120 => 36,  116 => 35,  112 => 34,  104 => 29,  99 => 28,  93 => 26,  90 => 25,  84 => 23,  82 => 22,  76 => 18,  65 => 16,  61 => 15,  51 => 10,  40 => 2,  37 => 1,);
+        return array (  208 => 68,  202 => 65,  198 => 64,  191 => 59,  185 => 57,  183 => 56,  179 => 55,  172 => 53,  166 => 52,  162 => 51,  154 => 48,  150 => 47,  143 => 45,  139 => 44,  135 => 43,  124 => 37,  120 => 36,  116 => 35,  112 => 34,  104 => 29,  99 => 28,  93 => 26,  90 => 25,  84 => 23,  82 => 22,  76 => 18,  65 => 16,  61 => 15,  51 => 10,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

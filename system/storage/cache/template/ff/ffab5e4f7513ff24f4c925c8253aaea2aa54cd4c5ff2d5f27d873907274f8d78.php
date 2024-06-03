@@ -248,25 +248,13 @@ class __TwigTemplate_970d60fd681d746d98b8e4b3296bec0f29180154d950fd7d83b7c79fddd
             <a href=\"index.php?route=information/information&language=en-gb&information_id=1\">About</a>
             <a href=\"index.php?route=information/sitemap&language=en-gb\">Site Map</a>
             <a href=\"index.php?route=product/manufacturer&language=en-gb\">Brand</a>
-            <a href=\"index.php?route=information/contact&language=en-gb\">Contact</a>
+            ";
+        // line 155
+        echo "          </div>
           </div>
-          </div>
-        <div class=\"col-md-4 col-xs-12\">
-            <div class=\"ebook\">
-              <div class=\"ebook-ctn\">
-                <h4>
-                  Monday - Friday:  8:00 AM - 9:00 PM
-                </h4>
-              </div>
-          </div>
-        </div>
-      <div class=\"col-md-3 col-xs-12 htop-user\">
-        <div class=\"head-call\">
-          <h2>Call and take more info:</h2>
-          <a href=\"tel:+00 544-213-615\">+00 544-213-615</a>
-        </div>
-      </div>
-      </div>
+        ";
+        // line 172
+        echo "      </div>
     </div>
   </div>
   </div>
@@ -468,7 +456,7 @@ class __TwigTemplate_970d60fd681d746d98b8e4b3296bec0f29180154d950fd7d83b7c79fddd
 
     public function getDebugInfo()
     {
-        return array (  443 => 248,  431 => 240,  426 => 238,  422 => 237,  416 => 236,  410 => 235,  404 => 234,  398 => 233,  391 => 232,  386 => 230,  382 => 229,  376 => 228,  369 => 227,  367 => 226,  350 => 220,  341 => 214,  331 => 207,  318 => 197,  309 => 190,  301 => 188,  289 => 186,  287 => 185,  280 => 181,  134 => 37,  125 => 35,  120 => 34,  109 => 32,  105 => 31,  92 => 21,  88 => 20,  84 => 19,  80 => 18,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
+        return array (  431 => 248,  419 => 240,  414 => 238,  410 => 237,  404 => 236,  398 => 235,  392 => 234,  386 => 233,  379 => 232,  374 => 230,  370 => 229,  364 => 228,  357 => 227,  355 => 226,  338 => 220,  329 => 214,  319 => 207,  306 => 197,  297 => 190,  289 => 188,  277 => 186,  275 => 185,  268 => 181,  257 => 172,  253 => 155,  134 => 37,  125 => 35,  120 => 34,  109 => 32,  105 => 31,  92 => 21,  88 => 20,  84 => 19,  80 => 18,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

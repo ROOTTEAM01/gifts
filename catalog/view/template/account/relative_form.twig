@@ -1,0 +1,91 @@
+{{ header }}
+<div class="pt-50">
+	<div id="account-relative-form" class="container acpage">
+		<div class="back-to-home">
+			<a href="{{ home }}">
+				<img src="image/catalog/back-to-home.svg" alt="Back to home">
+				&nbsp
+				<span>{{ back_to_main }}</span>
+			</a>
+		</div>
+		<div class="row pt-5">
+			<h3>{{ relative.id ? text_edit_relative : text_add_relative }}</h3>
+			<form action="{{ action }}" method="post" id="relative-form">
+				<input type="hidden" name="id" id="id" value="{{ relative.id | default('') }}">
+
+				{% set fields = [
+                    {'label': 'Name', 'id': 'name', 'type': 'text', 'value': relative.name | default(''), 'placeholder': text_name_placeholder},
+                    {'label': 'Surname', 'id': 'surname', 'type': 'text', 'value': relative.surname | default(''), 'placeholder': text_surname_placeholder},
+                    {'label': 'Description', 'id': 'description', 'type': 'textarea', 'value': relative.description | default(''), 'placeholder': text_description_placeholder}
+                ] %}
+
+				{% for field in fields %}
+					<div class="form-group required">
+						<label for="{{ field.id }}">{{ field.label }}</label>
+						{% if field.type == 'textarea' %}
+							<textarea name="{{ field.id }}" id="{{ field.id }}" class="form-control"  placeholder="{{ field.placeholder }}">{{ field.value }}</textarea>
+						{% else %}
+							<input type="{{ field.type }}" name="{{ field.id }}" id="{{ field.id }}" class="form-control" required placeholder="{{ field.placeholder }}" value="{{ field.value }}">
+						{% endif %}
+						{% if field.id == 'name' %}
+							<div id="error-name" class="invalid-feedback">{{ error_name_required }}</div>
+						{% elseif field.id == 'surname' %}
+							<div id="error-surname" class="invalid-feedback">{{ error_surname_required }}</div>
+						{% elseif field.id == 'description' %}
+							<div id="error-description" class="invalid-feedback">{{ error_description_required }}</div>
+						{% endif %}
+					</div>
+				{% endfor %}
+
+				<div class="form-group">
+					<label for="occasion_type">Occasion Type</label>
+					<select name="occasion_type" id="occasion_type" class="form-control" required>
+						{% set occasions = ['Ծնունդ', 'Կնունք', 'Ամանոր', 'Հարսանիք', ''] %}
+						{% for occasion in occasions %}
+							<option value="{{ occasion }}" {% if relative.occasion_type == occasion %} selected {% endif %}>
+								{{ occasion | default('None') }}
+							</option>
+						{% endfor %}
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="day">Day</label>
+					<input type="date" name="day" id="day" class="form-control" required value="{{ relative.day | default('') }}">
+				</div>
+
+				<div class="form-group">
+					<label for="delivery_time">Delivery Time</label>
+					<input type="date" name="delivery_time" id="delivery_time" class="form-control" required value="{{ relative.delivery_time | default('') }}">
+				</div>
+
+				<div class="form-group">
+					<label for="remember_me_week">Remember Me Week</label>
+					<select name="remember_me_week" id="remember_me_week" class="form-control">
+						{% set remember_weeks = ['Remember me 1 week later', 'Remember me 2 weeks later', 'Remember me 3 weeks later', 'Remember me 1 month later', 'None'] %}
+						{% for week in remember_weeks %}
+							<option value="{{ week }}" {% if relative.remember_me_week == week %} selected {% endif %}>
+								{{ week }}
+							</option>
+						{% endfor %}
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="remember_type">Remember Type</label>
+					<select name="remember_type" id="remember_type" class="form-control" required>
+						{% set remember_types = ['Gmail', 'SMS', 'Call', ''] %}
+						{% for type in remember_types %}
+							<option value="{{ type }}" {% if relative.remember_type == type %} selected {% endif %}>
+								{{ type | default('None') }}
+							</option>
+						{% endfor %}
+					</select>
+				</div>
+
+				<button type="submit" class="btn btn-primary">{{ relative.id ? button_edit : button_add }}</button>
+			</form>
+		</div>
+	</div>
+</div>
+{{ footer }}

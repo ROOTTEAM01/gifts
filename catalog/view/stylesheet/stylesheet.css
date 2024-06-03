@@ -30,7 +30,7 @@ body {
   padding-bottom: 30px;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #444;
+  color: var(--white);
 }
 /* Override the bootstrap defaults */
 .slick-slide{
@@ -227,11 +227,10 @@ header::after {
   bottom: 0;
   left: 65%;
   position: absolute;
-  background: #fff;
 }
 .manu_bg {
   background-color: var(--white);
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   padding: 18px 12px;
 }
 .head-call{
@@ -2494,6 +2493,11 @@ body.active-search .wbSearch {
   width: 100%;
   margin-top: 30px;
 }
+
+.form-group{
+  padding-bottom: 20px;
+}
+
 footer .newsletter .form-group{
   border: 1px solid var(--black);
 }
@@ -4083,6 +4087,11 @@ footer .news-p{
   color: var(--black);
   background-color: var(--white);
 }
+
+.form-control option{
+  background-color: #0A062D !important;
+}
+
 .catesort .input-group .form-select{
   color: var(--white);
   background-color: transparent;
@@ -7225,27 +7234,28 @@ footer .newsletter .container {
     mix-blend-mode: normal;
     right: 0;
   }
+  
   .test-pad::before {
-    position: absolute;
     content: '';
-    width: 700px;
-    height: 500px;
-    background: radial-gradient(50% 50% at 50% 32%,#1B7B5B 0%,rgba(32,22,120,0) 100%);
-    opacity: .62;
+    left: -12%;
+    top: 35%;
     z-index: -1;
-    top: 73%;
-    mix-blend-mode: normal;
-    left: -10%;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(50% 50% at 50% 50%,#1B7B5B 0%,rgba(32,22,120,0) 100%);
+    opacity: .62;
   }
   .center-bg::before {
     content: '';
     position: absolute;
     z-index: -1;
-    right: 0;
     width: 1000px;
-    height: 650px;
+    height: 600px;
     background: radial-gradient(50% 50% at 103% 64%,#5FFFCA 0%,rgba(32,22,120,0) 100%);
     opacity: .5;
+    left: -12%;
+    top: 35%;
   }
   .offer-banner::after {
     content: '';
@@ -7282,12 +7292,12 @@ footer .newsletter .container {
   }
   .special-section::after {
     content: '';
-    position: absolute;
-    left: -215px;
-    top: -55%;
+    left: -12%;
+    top: 35%;
     z-index: -1;
-    width: 700px;
-    height: 700px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
     background: radial-gradient(50% 50% at 50% 50%,#1B7B5B 0%,rgba(32,22,120,0) 100%);
     opacity: .62;
   }

@@ -1697,7 +1697,7 @@ progress {
   opacity: 1;
 }
 .form-control:disabled, .form-control:read-only {
-  background-color: #e9ecef;
+  /* background-color: #e9ecef; */
   opacity: 1;
 }
 .form-control::file-selector-button {

@@ -12226,3 +12226,44 @@ Line: 13
 File: C:\xampp\htdocs\gifts-quickstart\system\library\image.php
 Line: 47
 
+2024-05-14 08:44:03 - PHP Warning: unlink(C:/xampp/htdocs/gifts-quickstart/system/storage/cache/cache.store.1715677254): No such file or directory
+File: C:\xampp\htdocs\gifts-quickstart\system\library\cache\file.php
+Line: 49
+
+2024-05-15 06:37:02 - Error:  Class "Controller" not found in C:\xampp\htdocs\gifts-quickstart\catalog\controller\form\custom_form.php on line 2
+2024-05-15 06:53:27 - Error:  Class "Controller" not found in C:\xampp\htdocs\gifts-quickstart\catalog\controller\form\custom_form.php on line 2
+2024-05-15 06:53:56 - Error:  Class "Opencart\Catalog\Controller\Event\Controller" not found in C:\xampp\htdocs\gifts-quickstart\catalog\controller\form\custom_form.php on line 4
+2024-05-15 06:55:57 - Error:  Class "Opencart\Catalog\Controller\Event\Controller" not found in C:\xampp\htdocs\gifts-quickstart\catalog\controller\form\custom_form.php on line 5
+2024-05-15 06:55:59 - Error:  Class "Opencart\Catalog\Controller\Event\Controller" not found in C:\xampp\htdocs\gifts-quickstart\catalog\controller\form\custom_form.php on line 5
+2024-05-15 08:33:29 - Exception:  Error: Could not load model Opencart\Catalog\Model\Account\CustomForm! in C:\xampp\htdocs\gifts-quickstart\system\engine\loader.php on line 122
+2024-05-15 08:33:58 - Exception:  Error: Could not load model Opencart\Catalog\Model\Account\CustomForm! in C:\xampp\htdocs\gifts-quickstart\system\engine\loader.php on line 122
+2024-05-15 08:34:12 - Exception:  Error: Could not load model Opencart\Catalog\Model\Account\CustomForm! in C:\xampp\htdocs\gifts-quickstart\system\engine\loader.php on line 122
+2024-05-15 08:34:30 - Exception:  Error: Could not load model Opencart\Catalog\Model\Account\CustomForm! in C:\xampp\htdocs\gifts-quickstart\system\engine\loader.php on line 122
+2024-05-27 14:41:09 - Twig\Error\LoaderError:  Unable to find template "common/column_left.twig" (looked into: ) in "catalog/view/template/account/relative.twig" at line 1. in C:\xampp\htdocs\gifts-quickstart\system\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+2024-05-27 14:41:41 - Twig\Error\LoaderError:  Unable to find template "common/column_left.twig" (looked into: ) in "catalog/view/template/account/relative.twig" at line 1. in C:\xampp\htdocs\gifts-quickstart\system\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+2024-05-27 14:47:01 - Twig\Error\SyntaxError:  Unknown "endblock" tag. in C:\xampp\htdocs\gifts-quickstart\catalog\view\template\account\relative.twig on line 115
+2024-05-28 07:31:39 - Twig\Error\SyntaxError:  Unexpected "echo" tag (expecting closing tag for the "for" tag defined near line 39). in C:\xampp\htdocs\gifts-quickstart\catalog\view\template\account\relative.twig on line 40
+2024-05-28 07:31:47 - Twig\Error\SyntaxError:  Unexpected "echo" tag (expecting closing tag for the "for" tag defined near line 39). in C:\xampp\htdocs\gifts-quickstart\catalog\view\template\account\relative.twig on line 40
+2024-05-28 07:41:17 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative.php on line 25
+2024-05-28 07:41:43 - PHP Warning:  Attempt to read property "rows" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative.php on line 25
+2024-05-28 07:42:11 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative.php on line 25
+2024-05-28 07:42:22 - Exception:  <b>Notice</b>:  Undefined property: Proxy::getRelatives in <b>C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative.php</b> on line <b>41</b> in C:\xampp\htdocs\gifts-quickstart\system\engine\proxy.php on line 47
+2024-05-28 07:42:23 - Exception:  <b>Notice</b>:  Undefined property: Proxy::getRelatives in <b>C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative.php</b> on line <b>41</b> in C:\xampp\htdocs\gifts-quickstart\system\engine\proxy.php on line 47
+2024-05-29 06:53:29 - TypeError:  Opencart\Admin\Model\Customer\Customer::getTransactionTotal(): Argument #1 ($customer_id) must be of type int, null given
+File: C:\xampp\htdocs\gifts-quickstart\admin\model\customer\customer.php
+Line: 337
+
+2024-05-29 10:32:24 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 10:34:55 - PHP Warning:  Array to string conversion in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 23
+2024-05-29 10:34:55 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 10:38:19 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 10:51:34 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 11:05:42 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 11:06:17 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 11:12:45 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 11:14:26 - PHP Warning:  Undefined array key "customer_id" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 7
+2024-05-29 11:58:54 - Exception:  Error: Could not call registry key model_account_relative_form! in C:\xampp\htdocs\gifts-quickstart\system\engine\controller.php on line 25
+2024-05-30 07:06:39 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 34
+2024-05-30 07:06:46 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 34
+2024-05-30 07:06:49 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 34
+2024-05-30 07:06:53 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 34
