@@ -12267,3 +12267,22 @@ Line: 337
 2024-05-30 07:06:46 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 34
 2024-05-30 07:06:49 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 34
 2024-05-30 07:06:53 - PHP Warning:  Attempt to read property "row" on bool in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 34
+2024-06-04 06:59:31 - Error:  Call to undefined function Opencart\Catalog\Controller\Account\Helper\Utf8\strlen() in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 57
+2024-06-04 07:00:36 - Error:  Call to undefined function Opencart\Catalog\Controller\Account\Helper\Utf8\strlen() in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 57
+2024-06-04 07:00:57 - PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 58
+2024-06-04 07:00:57 - TypeError:  Opencart\System\Helper\Utf8\strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 58 in C:\xampp\htdocs\gifts-quickstart\system\helper\utf8.php on line 5
+2024-06-04 07:00:58 - PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 58
+2024-06-04 07:00:58 - TypeError:  Opencart\System\Helper\Utf8\strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 58 in C:\xampp\htdocs\gifts-quickstart\system\helper\utf8.php on line 5
+2024-06-04 07:48:06 - PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 46
+2024-06-04 07:48:06 - TypeError:  Opencart\System\Helper\Utf8\strlen(): Argument #1 ($string) must be of type string, null given, called in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 46 in C:\xampp\htdocs\gifts-quickstart\system\helper\utf8.php on line 5
+2024-06-04 09:13:26 - Exception:  Error: Could not call registry key error! in C:\xampp\htdocs\gifts-quickstart\system\engine\controller.php on line 25
+2024-06-04 09:13:28 - Exception:  Error: Could not call registry key error! in C:\xampp\htdocs\gifts-quickstart\system\engine\controller.php on line 25
+2024-06-04 09:13:31 - Exception:  Error: Could not call registry key error! in C:\xampp\htdocs\gifts-quickstart\system\engine\controller.php on line 25
+2024-06-04 12:00:46 - PHP Warning:  Undefined array key "surname" in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 44
+2024-06-04 12:00:47 - PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 45
+2024-06-04 12:00:47 - TypeError:  Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, null given, called in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 10 in C:\xampp\htdocs\gifts-quickstart\system\library\db.php on line 56
+2024-06-04 12:01:28 - PHP Warning:  Undefined array key "surname" in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 10
+2024-06-04 12:01:28 - TypeError:  Opencart\System\Library\DB::escape(): Argument #1 ($value) must be of type string, null given, called in C:\xampp\htdocs\gifts-quickstart\catalog\model\account\relative_form.php on line 10 in C:\xampp\htdocs\gifts-quickstart\system\library\db.php on line 56
+2024-06-04 12:08:57 - ParseError:  syntax error, unexpected token "if", expecting "function" or "const" in C:\xampp\htdocs\gifts-quickstart\catalog\controller\account\relative_form.php on line 73
+2024-06-10 06:58:26 - Twig\Error\LoaderError:  Unable to find template "common/header.twig" (looked into: ) in "catalog/view/template/account/relative_form.twig" at line 1. in C:\xampp\htdocs\gifts-quickstart\system\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+2024-06-10 08:20:46 - Twig\Error\SyntaxError:  Unexpected end of template. in C:\xampp\htdocs\gifts-quickstart\catalog\view\template\common\header.twig on line 251

@@ -10,7 +10,8 @@ $_['text_surname_placeholder'] = 'Enter your surname';
 $_['text_description_placeholder'] = 'Enter a description';
 
 // Error messages
-$_['error_name_required'] = 'Name is required';
-$_['error_surname_required'] = 'Surname is required';
-$_['error_description_required'] = 'Description is required';
+$_['error_name']  = 'Name must be between 1 and 32 characters!';
+$_['error_surname']  = 'Surname must be between 1 and 32 characters!';
+$_['error_description']  = 'Description must be between 1 and 32 characters!';
+
 ?>

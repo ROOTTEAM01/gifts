@@ -330,11 +330,22 @@ class __TwigTemplate_970d60fd681d746d98b8e4b3296bec0f29180154d950fd7d83b7c79fddd
         echo "\" class=\"dropdown-toggle huser-drop\" data-bs-toggle=\"dropdown\">
                 <div class=\"xuser\">                
                   <img src=\"image/catalog/huser.svg\" alt=\"user\"/>
-                  <span>log in</span>
-                </div>
+                  ";
+        // line 217
+        if ( !($context["logged"] ?? null)) {
+            // line 218
+            echo "                  <span>log in</span>
+                  ";
+        } else {
+            // line 220
+            echo "                  <span>My Profile</span>
+                  ";
+        }
+        // line 222
+        echo "                </div>
                 <div class=\"xuser-desc d-none\">
                   <span>";
-        // line 220
+        // line 224
         if (($context["logged"] ?? null)) {
             echo "<span class=\"d-none d-lg-inline\">";
             echo ($context["text_logout"] ?? null);
@@ -351,71 +362,71 @@ class __TwigTemplate_970d60fd681d746d98b8e4b3296bec0f29180154d950fd7d83b7c79fddd
                 <h5 class=\"text-left\">Your Account</h5>
                 <h6 class=\"text-left\">Access account and manage orders</h6>
                 ";
-        // line 226
+        // line 230
         if ( !($context["logged"] ?? null)) {
-            // line 227
+            // line 231
             echo "                  <li class=\"acd\"><a href=\"";
             echo ($context["register"] ?? null);
             echo "\" class=\"dropdown-item\"><i class=\"fa fa-user-plus\"></i>";
             echo ($context["text_register"] ?? null);
             echo "</a></li>
                   <li class=\"acd\"><a href=\"";
-            // line 228
+            // line 232
             echo ($context["login"] ?? null);
             echo "\" class=\"dropdown-item\"><i class=\"fa fa-lock\"></i>";
             echo ($context["text_login"] ?? null);
             echo "</a></li>
                   <li class=\"wishcom\"><a href=\"";
-            // line 229
+            // line 233
             echo ($context["compare"] ?? null);
             echo "\"><i class=\"fa fa-compress\"></i>compare</a></li>
                   <li class=\"wishcom\"><a href=\"";
-            // line 230
+            // line 234
             echo ($context["wishlist"] ?? null);
             echo "\"><i class=\"fa fa-heart\"></i>wishlist</a></li>
                 ";
         } else {
-            // line 232
+            // line 236
             echo "                  <li class=\"acd\"><a href=\"";
             echo ($context["account"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_account"] ?? null);
             echo "</a></li>
                   <li class=\"acd\"><a href=\"";
-            // line 233
+            // line 237
             echo ($context["order"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_order"] ?? null);
             echo "</a></li>
                   <li class=\"acd\"><a href=\"";
-            // line 234
+            // line 238
             echo ($context["transaction"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_transaction"] ?? null);
             echo "</a></li>
                   <li class=\"acd\"><a href=\"";
-            // line 235
+            // line 239
             echo ($context["download"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_download"] ?? null);
             echo "</a></li>
                   <li class=\"acd\"><a href=\"";
-            // line 236
+            // line 240
             echo ($context["logout"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_logout"] ?? null);
             echo "</a></li>
                   <li class=\"wishcom\"><a href=\"";
-            // line 237
+            // line 241
             echo ($context["compare"] ?? null);
             echo "\"><i class=\"fa fa-compress\"></i>compare</a></li>
                   <li class=\"wishcom\"><a href=\"";
-            // line 238
+            // line 242
             echo ($context["wishlist"] ?? null);
             echo "\"><i class=\"fa fa-heart\"></i>wishlist</a></li>
                 ";
         }
-        // line 240
+        // line 244
         echo "                <li class=\"xsla d-inline-block\">";
         echo ($context["currency"] ?? null);
         echo "</li>
@@ -427,7 +438,7 @@ class __TwigTemplate_970d60fd681d746d98b8e4b3296bec0f29180154d950fd7d83b7c79fddd
           </li>              
           </ul>
         <div class=\"d-inline-block\"><span id=\"header-cart\">";
-        // line 248
+        // line 252
         echo ($context["cart"] ?? null);
         echo "</span></div>
         </div>
@@ -456,7 +467,7 @@ class __TwigTemplate_970d60fd681d746d98b8e4b3296bec0f29180154d950fd7d83b7c79fddd
 
     public function getDebugInfo()
     {
-        return array (  431 => 248,  419 => 240,  414 => 238,  410 => 237,  404 => 236,  398 => 235,  392 => 234,  386 => 233,  379 => 232,  374 => 230,  370 => 229,  364 => 228,  357 => 227,  355 => 226,  338 => 220,  329 => 214,  319 => 207,  306 => 197,  297 => 190,  289 => 188,  277 => 186,  275 => 185,  268 => 181,  257 => 172,  253 => 155,  134 => 37,  125 => 35,  120 => 34,  109 => 32,  105 => 31,  92 => 21,  88 => 20,  84 => 19,  80 => 18,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
+        return array (  442 => 252,  430 => 244,  425 => 242,  421 => 241,  415 => 240,  409 => 239,  403 => 238,  397 => 237,  390 => 236,  385 => 234,  381 => 233,  375 => 232,  368 => 231,  366 => 230,  349 => 224,  345 => 222,  341 => 220,  337 => 218,  335 => 217,  329 => 214,  319 => 207,  306 => 197,  297 => 190,  289 => 188,  277 => 186,  275 => 185,  268 => 181,  257 => 172,  253 => 155,  134 => 37,  125 => 35,  120 => 34,  109 => 32,  105 => 31,  92 => 21,  88 => 20,  84 => 19,  80 => 18,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

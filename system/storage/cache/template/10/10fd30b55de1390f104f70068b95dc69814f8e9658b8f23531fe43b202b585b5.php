@@ -148,13 +148,13 @@ class __TwigTemplate_df0a41d700cca0ed4c44c894de040854e164f2bfe4f9398a73173349d43
                 echo ($context["edit_relative"] ?? null);
                 echo "&id=";
                 echo twig_get_attribute($this->env, $this->source, $context["relative"], "id", [], "any", false, false, false, 51);
-                echo "\" class=\"btn btn-primary btn-edit\">Edit</a>
+                echo "\" class=\"btn btn-primary btn-edit mb-3\">Edit</a>
                                         <a href=\"";
                 // line 52
                 echo ($context["action"] ?? null);
                 echo "&delete=1&id=";
                 echo twig_get_attribute($this->env, $this->source, $context["relative"], "id", [], "any", false, false, false, 52);
-                echo "\" class=\"btn btn-danger btn-delete\">Delete</a>
+                echo "\" class=\"btn btn-primary btn-delete bg-danger text-white\">Delete</a>
                                     </td>
                                 </tr>
                             ";

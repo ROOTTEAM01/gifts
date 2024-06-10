@@ -214,7 +214,11 @@
                 <a href="{{ account }}" class="dropdown-toggle huser-drop" data-bs-toggle="dropdown">
                 <div class="xuser">                
                   <img src="image/catalog/huser.svg" alt="user"/>
+                  {% if not logged %}
                   <span>log in</span>
+                  {% else %}
+                  <span>My Profile</span>
+                  {% endif %}
                 </div>
                 <div class="xuser-desc d-none">
                   <span>{% if logged %}<span class="d-none d-lg-inline">{{ text_logout }}</span>{% else %}<span class="d-none d-lg-inline">{{ text_account }}</span>{% endif %}</span>
